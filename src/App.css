@@ -40,3 +40,14 @@
   margin-left: 7%;
   text-align: left;
 }
+
+.toggle-screen {
+  width: 19vw;
+  height: 5vw;
+  margin: 2%;
+  font-size: 2vw;
+  background-color: rgb(48, 223, 48);
+  border: none;
+  cursor: pointer;
+  border-radius: 1vw;
+}

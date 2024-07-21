@@ -4,6 +4,12 @@ import "./App.css";
 function App() {
   const [screen, setScreen] = useState("sender");
 
+  const handleToggleScreen = () => {
+    setScreen((prevScreen) => {
+      return prevScreen === "sender" ? "reciever" : "sender";
+    });
+  };
+
   return (
     <>
       <div className="chats-container">
@@ -27,6 +33,9 @@ function App() {
           </div>
         )}
       </div>
+      <button className="toggle-screen" onClick={handleToggleScreen}>
+        Toggle Screen
+      </button>
     </>
   );
 }
