@@ -3,6 +3,7 @@ import "./App.css";
 
 function App() {
   const [screen, setScreen] = useState("sender");
+
   return (
     <>
       <div className="chats-container">
