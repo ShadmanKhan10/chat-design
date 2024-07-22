@@ -24,10 +24,11 @@ function App() {
           </div>
         ) : (
           <div className="chat-box-container">
-            <div className="recievers-chat">
+            {/* <div className="recievers-chat"> */}
+            <div className="reciever-chat">
               <p className="msg-text">I am fine</p>
             </div>
-            <div className="senders-chat">
+            <div className="sender-chat">
               <p className="msg-text">Hii How are you</p>
             </div>
           </div>
