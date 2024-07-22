@@ -5,67 +5,46 @@
   display: block;
   aspect-ratio: 16/9;
   background-color: rgb(223, 218, 218);
-  display: flex;
 }
 
 .chat-box-container {
   width: 100%;
   border: 2px solid green;
+}
+
+.parent-chat-right {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
+  justify-content: right;
 }
 
-.senders-chat {
-  border: 2px solid black;
-  width: 20%;
-  height: 10%;
-  margin: 2%;
-  position: relative;
-  top: 64%;
-  transform: translateY(-64%);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-.sender-chat {
-  border: 2px solid black;
-  width: 20%;
-  height: 10%;
-  margin: 2%;
-  position: relative;
-  top: 64%;
-  transform: translateY(-64%);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+.parent-chat-left {
+  display: flex;
+  justify-content: left;
 }
 
-.reciever-chat {
+.senders-chat-left {
   border: 2px solid black;
   width: 20%;
   height: 10%;
   margin: 2%;
   position: relative;
-  top: 84%;
-  transform: translateY(-84%);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
-.recievers-chat {
+.senders-chat-right {
   border: 2px solid black;
   width: 20%;
   height: 10%;
   margin: 2%;
+
   position: relative;
-  top: 84%;
-  transform: translateY(-84%);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
 .msg-text {
   font-size: 1.8vw;
   margin-left: 7%;
@@ -81,4 +60,27 @@
   border: none;
   cursor: pointer;
   border-radius: 1vw;
+}
+
+.input-msg-box {
+  width: 85%;
+  height: 5vw;
+  margin-left: 2%;
+  margin-bottom: 1%;
+  border: none;
+  outline: none;
+  font-size: 3vw;
+}
+.input-container {
+  display: flex;
+  justify-content: left;
+  margin-top: 1%;
+  position: sticky;
+}
+.send-msg-btn {
+  width: 10%;
+  height: 5.15vw;
+  border: none;
+  background-color: rgb(70, 218, 70);
+  cursor: pointer;
 }
