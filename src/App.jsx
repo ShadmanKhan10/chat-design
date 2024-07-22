@@ -34,7 +34,7 @@ function App() {
         )}
       </div>
       <button className="toggle-screen" onClick={handleToggleScreen}>
-        Toggle Screen
+        {screen}
       </button>
     </>
   );
